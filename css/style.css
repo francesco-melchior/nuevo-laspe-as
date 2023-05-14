@@ -205,6 +205,40 @@ video {
     padding: 110px 0px;
 }
 
+.tag-container-forward {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding: 200px 0px;
+}
+
+.main-section {
+    /* border: solid 4px red; */
+
+    background-image: url(../assets/img/hero-background-edit.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media (min-width:600px) {
+    .video-wrapper {
+        display: none;
+      }
+    video {
+        display: none;
+      }
+
+      .main-section{
+        display: flex;
+      }
+}
+
 
 .barrita {
 
