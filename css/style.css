@@ -163,7 +163,9 @@ nav {
 
 /* Section 1 */
 
-.tag-container{
+
+
+.tag-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -177,8 +179,10 @@ nav {
 
     background-image: url(../assets/img/video-compressed.gif);
     height: 100vh;
+
     background-position: center;
-    background-size: cover;    
+    background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -278,7 +282,7 @@ nav {
 
     .main-section {
         /* border: solid 4px red; */
-    
+
         padding: 0px 180px;
     }
 
@@ -334,7 +338,7 @@ nav {
 
     /* border: #F06E22 solid 4px; */
 
-    
+
     background-image: url(../assets/img/hay-razones-background.png);
     background-size: cover;
     background-position: center;
@@ -480,7 +484,7 @@ nav {
 }
 
 #accordion label+input[type="checkbox"]:checked+.content {
-    max-height: 1200px;
+    max-height: 2200px;
 }
 
 
@@ -689,7 +693,7 @@ footer {
 footer .gabi-rampulla-intendente {
 
     /* border: 4px solid yellow; */
-width: 100%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
