@@ -100,7 +100,7 @@ nav {
 
 /* mod para iPad, era 768 */
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 920px) {
 
     .menu ul {
         display: flex;
@@ -161,7 +161,38 @@ nav {
 
 
 
-/* Section 1 */
+
+/* section 0 */
+
+
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+    /* Centering the container's content vertically 
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+video {
+    /** Simulationg background-size: cover */
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
 
 
 
@@ -174,48 +205,6 @@ nav {
     padding: 100px 0px;
 }
 
-.main-section {
-    /* border: solid 4px red; */
-
-    background-image: url(../assets/img/video-compressed.gif);
-    height: 100vh;
-
-    background-position: center;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-
-
-.h1-container {
-    /* border: 4px solid blue; */
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.h1-container .titulo-las-peñas-cambia {
-    /* border: 4px solid green; */
-
-    color: var(--white);
-    font-style: normal;
-    line-height: 32px;
-    font-size: 36px;
-    font-weight: 900;
-    text-shadow: 1px 1px 8px var(--black-jxc);
-
-
-
-}
-
-.barrita-container {
-    margin-bottom: 120px;
-}
 
 .barrita {
 
@@ -271,22 +260,7 @@ nav {
     width: 20%;
 }
 
-/* Media para los H1 y los márgenes de la section-1 */
 
-@media (min-width: 900px) {
-
-    .h1-container .titulo-las-peñas-cambia {
-        font-size: 54px;
-        line-height: 55px;
-    }
-
-    .main-section {
-        /* border: solid 4px red; */
-
-        padding: 0px 180px;
-    }
-
-}
 
 /* Section "Nosotros" */
 
