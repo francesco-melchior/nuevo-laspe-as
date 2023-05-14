@@ -206,7 +206,7 @@ video {
 }
 
 .tag-container-forward {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -235,6 +235,10 @@ video {
       }
 
       .main-section{
+        display: flex;
+      }
+
+      .tag-container-forward{
         display: flex;
       }
 }
