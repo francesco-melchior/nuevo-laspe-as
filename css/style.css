@@ -628,7 +628,7 @@
         align-items: center;
         gap: 12px;
         text-align: left;
-        
+
     }
 
     .foto-candidatos-bottom {
@@ -679,14 +679,14 @@
             margin-top: 0px;
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 24px;
         }
 
         .contenedor-candidatos-titulares {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            gap: 40px;
+            gap: 24px;
         }
 
 
@@ -706,13 +706,17 @@
         flex-direction: column;
         align-items: center;
         gap: 40px;
-        padding: 24px 24px;
+        padding: 42px 24px;
         text-align: center;
     }
 
-    footer .footer-flex-wrapper .gabi-rampulla-intendente {
+    /* footer{
 
-        
+    } */
+
+    .gabi-rampulla-intendente {
+
+
         /* width: 100%; */
 
         display: flex;
@@ -720,32 +724,30 @@
         text-align: left;
     }
 
-    footer .footer-flex-wrapper .gabi-rampulla-intendente .gabi {
+    .gabi {
         /* border: 4px solid red; */
         color: var(--white);
-        font-size: 42px;
-        font-weight: 900;
+        font-size: 32px;
+        font-weight: 700;
     }
 
-    footer .footer-flex-wrapper .gabi-rampulla-intendente .rampulla {
+    .rampulla {
         /* border: 4px solid red; */
         color: var(--white);
-        font-size: 42px;
-        font-weight: 800;
-
-        margin-bottom: 4px;
+        font-size: 32px;
+        font-weight: 700;
     }
 
-    footer .footer-flex-wrapper .gabi-rampulla-intendente .intendente {
+    .intendente {
         /* border: 4px solid red; */
         color: var(--white);
-        font-size: 42px;
-        font-weight: 400;
+        font-size: 32px;
+        font-weight: 350;
 
         margin-bottom: 8px;
     }
 
-    footer .footer-flex-wrapper .barrita-container {
+    .barrita-container {
         /* border: 4px solid white; */
         margin-bottom: 0;
         width: 100%;
@@ -757,7 +759,7 @@
 
         overflow: hidden;
         border-radius: 25px;
-        height: 16px;
+        height: 8px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -766,13 +768,13 @@
     }
 
     .alianza-container {
-/* border: 4px solid blue; */
+        /* border: 4px solid red; */
 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 24px 24px;
+        padding: 42px 24px;
         gap: 24px;
         width: 100%;
         background-color: #fafafa;
@@ -780,83 +782,88 @@
 
     .separador-iconos-partidos {
         display: flex;
-        gap: 12px;
+        gap: 32px;
     }
 
 
-.contact{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-/* background-color: #252525; */
-
-gap: 12px;
-}
-
-.div-correo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-}
-
-.div-correo p {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--black-jxc);
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.div-correo a {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--button-blue);
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.div-correo a:hover {
-    color: var(--black-jxc);
-}
+    .logo-jxc {
+        width: 250px;
+        height: 100%;
+    }
 
 
-.div-facebook{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-}
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-.div-facebook p {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--black-jxc);
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
+        /* background-color: #252525; */
 
-.div-facebook a {
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--button-blue);
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
+        gap: 24px;
 
-.div-facebook a:hover {
-    color: var(--black-jxc);
-}
+        margin-top: 100px;
+    }
+
+    .div-correo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .div-correo p {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--black-jxc);
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .div-correo a {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--button-blue);
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .div-correo a:hover {
+        color: var(--black-jxc);
+    }
+
+
+    .div-facebook {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .div-facebook p {
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--black-jxc);
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .div-facebook a {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--button-blue);
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        margin-bottom: 24px;
+    }
+
+    .div-facebook a:hover {
+        color: var(--black-jxc);
+    }
 
 
 
-/* ------------------------ */
-
-.animate__animated.animate__fadeIn {
-    --animate-duration: 1.5s;
-  }
-  
+    /* ------------------------ */
