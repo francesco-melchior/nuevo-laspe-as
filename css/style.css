@@ -851,3 +851,13 @@ gap: 12px;
 .div-facebook a:hover {
     color: var(--black-jxc);
 }
+
+
+
+/* ------------------------ */
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 4s;
+  }
+  
+  

@@ -36,11 +36,6 @@ hamburger.addEventListener('click', () => {
 
 
 
-
-
-
-
-
 function rotateSpan() {
   const spanElement = document.getElementById("span-element");
   spanElement.classList.toggle("rotated");
