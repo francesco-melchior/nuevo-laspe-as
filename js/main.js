@@ -38,14 +38,18 @@ hamburger.addEventListener('click', () => {
 
 
 const btnShare = document.querySelector('#btn-share');
-const linkToCopy = 'www.laspeñascambia2023.com';
-
-btnShare.addEventListener('click', () => {
-  navigator.clipboard.writeText(linkToCopy);
-  alert('Enlace copiado en el portapapeles');
-});
-
-
+    const linkToCopy = 'www.laspeñascambia2023.com';
+    const alertMessage = document.createElement('div');
+   
+    btnShare.addEventListener('click', () => {
+      navigator.clipboard.writeText(linkToCopy);
+      alertMessage.textContent = 'Enlace copiado en el portapapeles';
+      alertMessage.classList.add('alert');
+      document.body.appendChild(alertMessage);
+      setTimeout(() => {
+        alertMessage.remove();
+      }, 3000);
+    });
 
 
 
