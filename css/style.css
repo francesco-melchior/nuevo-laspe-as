@@ -330,6 +330,10 @@
         .nosotros {
             padding: 100px 180px;
         }
+    
+        .nosotros p {
+            font-size: 18px;
+        }
     }
 
     /* Section "Hay razones" */
@@ -363,6 +367,10 @@
     @media (min-width:768px) {
         .hay-razones {
             padding: 100px 180px;
+        }
+
+        .hay-razones p {
+            font-size: 18px;
         }
     }
 
@@ -406,6 +414,10 @@
     @media (min-width:768px) {
         .propuestas {
             padding: 100px 180px;
+        }
+
+        .propuestas p {
+            font-size: 18px;
         }
     }
 
