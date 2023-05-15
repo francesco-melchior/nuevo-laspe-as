@@ -541,7 +541,7 @@
     }
 
     .flex-candidatos-top {
-        /* border: 4px solid yellow; */
+        border: 4px solid yellow;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -555,7 +555,7 @@
     }
 
     .container-candidatos-on-top {
-        /* border: 4px blue solid; */
+        border: 4px blue solid;
 
         width: 100%;
         display: flex;
@@ -573,7 +573,7 @@
     }
 
     .description-candidatos-on-top h2 {
-        /* border: 4px solid red; */
+        border: 4px solid red;
 
         font-weight: 700;
         font-size: 20px;
@@ -582,7 +582,7 @@
     }
 
     .description-candidatos-on-top h3 {
-        /* border: 4px solid red; */
+        border: 4px solid red;
 
         font-weight: 500;
         font-size: 16px;
@@ -593,7 +593,7 @@
 
 
     .flex-candidatos-bottom {
-        /* border: #EE1B2E solid 4px; */
+        border: #EE1B2E solid 4px;
 
         /* contiene las tres cajitas de 7 candidatos a concejales, titulares y suplentes tambien */
 
@@ -605,7 +605,7 @@
 
 
     .flex-candidatos-bottom-tribunal {
-        /* border: #EE1B2E solid 4px; */
+        border: purple solid 4px;
 
         /* contiene las tres cajitas de candidatos a TRIBUNAL, titulares y suplentes tambien */
 
@@ -619,16 +619,16 @@
 
 
     .container-candidatos-bottom {
-        /* border: 4px blue solid; */
+        border: 4px blue solid;
 
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 
         align-items: center;
         gap: 12px;
-
-        text-align: center;
+        text-align: left;
+        
     }
 
     .foto-candidatos-bottom {
