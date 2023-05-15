@@ -43,7 +43,8 @@ shareBtn.addEventListener('click', () => {
     navigator.share({
       title: 'Título de tu página',
       text: 'Texto que se compartirá junto al enlace',
-      url: 'https://www.tupagina.com'
+      url: 'https://www.tupagina.com',
+      icon: 'https://www.dropbox.com/s/q9vyac0ut9qo911/icon-share.png?dl=0'
     })
       .then(() => console.log('Compartido con éxito'))
       .catch(error => console.error('Error al compartir:', error));
@@ -51,6 +52,8 @@ shareBtn.addEventListener('click', () => {
     console.log('API de compartir no disponible en este navegador');
   }
 });
+
+
 
 
 
