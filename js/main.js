@@ -37,6 +37,21 @@ hamburger.addEventListener('click', () => {
 
 
 
+const btnShare = document.querySelector('#btn-share');
+const linkToCopy = 'www.laspeñascambia2023.com';
+
+btnShare.addEventListener('click', () => {
+  navigator.clipboard.writeText(linkToCopy);
+  alert('Enlace copiado en el portapapeles');
+});
+
+
+
+
+
+
+
+
 
 
 
