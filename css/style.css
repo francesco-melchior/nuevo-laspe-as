@@ -1,822 +1,820 @@
-<<<<<<< HEAD
 #btn-share {
     background-color: var(--button-blue);
-=======
-.btn-test {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    border: 4px solid red;
-
-    align-items: center;
-    justify-content: center;
 }
+    .btn-test {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 
-#shareBtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
->>>>>>> b57a4a0dba3c57483be77911f04afa07aacd7bcc
-    border: none;
-    color: var(--white);
-    cursor: pointer;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 16px 20px;
-    min-width: 250px;
-}
+        border: 4px solid red;
 
+        align-items: center;
+        justify-content: center;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-* {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* display: none; */
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-a {
-    text-decoration: none;
-    color: var(--black-jxc);
-}
-
-li {
-    list-style: none;
-}
-
-:root {
-    --white: #ffffff;
-    --black-jxc: #424242;
-    --button-blue: #3483FA;
-}
-
-header {
-
-    z-index: 1;
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 10px;
-
-    background-color: var(--white);
-
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
+    #shareBtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        color: var(--white);
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 16px 20px;
+        min-width: 250px;
+    }
 
 
 
-.logo a {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--black-jxc);
-}
-
-.menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-.menu li:last-child {
-    margin-right: 0;
-}
-
-.menu a {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--black-jxc);
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.menu a:hover {
-    color: var(--button-blue);
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 30px;
-    height: 3px;
-    background-color: var(--black-jxc);
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
 
 
-/* mod para iPad, era 768 */
 
-@media screen and (max-width: 920px) {
+
+
+
+
+
+
+
+
+    * {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* display: none; */
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: var(--black-jxc);
+    }
+
+    li {
+        list-style: none;
+    }
+
+    :root {
+        --white: #ffffff;
+        --black-jxc: #424242;
+        --button-blue: #3483FA;
+    }
+
+    header {
+
+        z-index: 1;
+
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 10px;
+
+        background-color: var(--white);
+
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+
+
+    .logo a {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--black-jxc);
+    }
 
     .menu ul {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         list-style: none;
         margin: 0;
         padding: 0;
-        /* mod para que ocupe toda la pantalla, era padding 0 antes */
-        /* padding-bottom: 520px; */
     }
 
+    .menu li {
+        margin-right: 20px;
+    }
 
+    .menu li:last-child {
+        margin-right: 0;
+    }
 
-    .menu {
-        display: none;
+    .menu a {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--black-jxc);
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
 
-
-        transition: transform 0.3s ease-in-out;
+    .menu a:hover {
+        color: var(--button-blue);
     }
 
     .hamburger {
-        display: flex;
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 68px;
-        left: 0;
-        width: 100%;
-        background-color: var(--white);
-        padding: 20px;
-        z-index: 1;
-
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-
-
-    .menu.active li {
-        margin: 16px 0;
-    }
-}
-
-
-
-
-/* section 0 */
-
-
-.video-wrapper {
-    /* Telling our absolute positioned video to 
-    be relative to this element */
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    /* Will not allow the video to overflow the 
-    container */
-    overflow: hidden;
-    /* Centering the container's content vertically 
-    and horizontally */
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-video {
-    /** Simulationg background-size: cover */
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-
-
-.tag-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-    padding: 110px 0px;
-}
-
-.tag-container-forward {
-    display: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    padding: 200px 0px;
-}
-
-.main-section {
-    /* border: solid 4px red; */
-
-    background-image: url(../assets/img/hero-background-edit.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    display: none;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-@media (min-width:600px) {
-    .video-wrapper {
         display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        width: 30px;
+        height: 3px;
+        background-color: var(--black-jxc);
+        margin-bottom: 5px;
+        border-radius: 5px;
+    }
+
+
+    /* mod para iPad, era 768 */
+
+    @media screen and (max-width: 920px) {
+
+        .menu ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /* mod para que ocupe toda la pantalla, era padding 0 antes */
+            /* padding-bottom: 520px; */
+        }
+
+
+
+        .menu {
+            display: none;
+
+
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hamburger {
+            display: flex;
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        .menu.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 68px;
+            left: 0;
+            width: 100%;
+            background-color: var(--white);
+            padding: 20px;
+            z-index: 1;
+
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .menu.active li {
+            margin: 16px 0;
+        }
+    }
+
+
+
+
+    /* section 0 */
+
+
+    .video-wrapper {
+        /* Telling our absolute positioned video to 
+    be relative to this element */
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        /* Will not allow the video to overflow the 
+    container */
+        overflow: hidden;
+        /* Centering the container's content vertically 
+    and horizontally */
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
     video {
-        display: none;
+        /** Simulationg background-size: cover */
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 
-    .main-section {
+
+
+    .tag-container {
         display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        padding: 110px 0px;
     }
 
     .tag-container-forward {
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        padding: 200px 0px;
+    }
+
+    .main-section {
+        /* border: solid 4px red; */
+
+        background-image: url(../assets/img/hero-background-edit.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    @media (min-width:600px) {
+        .video-wrapper {
+            display: none;
+        }
+
+        video {
+            display: none;
+        }
+
+        .main-section {
+            display: flex;
+        }
+
+        .tag-container-forward {
+            display: flex;
+        }
+    }
+
+
+    .barrita {
+
+        /* border: solid 4px pink; */
+        overflow: hidden;
+        border-radius: 25px;
+        height: 16px;
         display: flex;
-    }
-}
-
-
-.barrita {
-
-    /* border: solid 4px pink; */
-    overflow: hidden;
-    border-radius: 25px;
-    height: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 24px;
-    /* gap: 6px; */
-
-}
-
-.barrita .color-barrita-1 {
-    background-color: #FED102;
-    width: 20%;
-}
-
-.barrita .color-barrita-2 {
-    background-color: #F8B80E;
-    width: 20%;
-}
-
-.barrita .color-barrita-3 {
-    background-color: #F06E22;
-    width: 20%;
-}
-
-.barrita .color-barrita-4 {
-    background-color: #EE1B2E;
-    width: 20%;
-}
-
-.barrita .color-barrita-5 {
-    background-color: #BC1A8D;
-    width: 20%;
-}
-
-.barrita .color-barrita-6 {
-    background-color: #9C2285;
-    width: 20%;
-}
-
-.barrita .color-barrita-7 {
-    background-color: #2D2A79;
-    width: 20%;
-}
-
-.barrita .color-barrita-8 {
-    background-color: #35BFE3;
-    width: 20%;
-}
-
-
-
-/* Section "Nosotros" */
-
-.nosotros {
-
-    /* border: #F06E22 solid 4px; */
-
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 100px 24px;
-    text-align: center;
-}
-
-.nosotros h2 {
-    color: var(--black-jxc);
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.nosotros p {
-    color: var(--black-jxc);
-    font-weight: 500;
-    font-size: 16px;
-
-    line-height: 26px;
-}
-
-.nosotros a {
-    color: var(--white);
-    background-color: var(--button-blue);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 16px 20px;
-    min-width: 250px;
-}
-
-@media (min-width:768px) {
-    .nosotros {
-        padding: 100px 180px;
-    }
-}
-
-/* Section "Hay razones" */
-
-.hay-razones {
-
-    /* border: #F06E22 solid 4px; */
-
-
-    background-image: url(../assets/img/hay-razones-background.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 100px 24px;
-    text-align: center;
-}
-
-.hay-razones h2 {
-    color: var(--white);
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.hay-razones p {
-    color: var(--white);
-    font-weight: 500;
-    font-size: 16px;
-
-    line-height: 26px;
-}
-
-@media (min-width:768px) {
-    .hay-razones {
-        padding: 100px 180px;
-    }
-}
-
-/* Section "Propuestas" */
-
-.propuestas {
-
-    /* border: #F06E22 solid 4px; */
-
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 100px 24px;
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-.propuestas h2 {
-    color: var(--black-jxc);
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.propuestas p {
-    color: var(--black-jxc);
-    font-weight: 500;
-    font-size: 16px;
-
-    line-height: 26px;
-}
-
-.propuestas a {
-    color: var(--white);
-    background-color: var(--button-blue);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 18px;
-    padding: 16px 20px;
-    min-width: 250px;
-}
-
-@media (min-width:768px) {
-    .propuestas {
-        padding: 100px 180px;
-    }
-}
-
-
-/* Desplegables de la seccion propuestas */
-
-#accordion {
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    text-align: left;
-    margin-top: 40px;
-}
-
-#accordion li {
-    width: 100%;
-    background-color: var(--white);
-
-    border: 2px solid var(--black-jxc);
-
-    border-radius: 4px;
-}
-
-#accordion li label {
-    padding: 24px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4px;
-
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--black-jxc);
-
-    cursor: pointer;
-
-}
-
-
-.material-symbols-outlined {
-    scale: 120%;
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 700,
-        'GRAD' 0,
-        'opsz' 48
-}
-
-#accordion label+input[type="checkbox"] {
-    display: none;
-}
-
-#accordion .content {
-    padding: 0px 16px;
-    line-height: 26px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-
-}
-
-#accordion label+input[type="checkbox"]:checked+.content {
-    max-height: 400px;
-}
-
-.content p {
-    margin-bottom: 24px;
-}
-
-#accordion label+input[type="checkbox"]:checked+.content {
-    max-height: 2200px;
-}
-
-
-/* span rotation */
-
-.rotated {
-    transform: rotate(180deg);
-    transition: transform 0.3s;
-}
-
-
-
-
-/* Section "Nosotros" */
-
-.candidatos {
-
-    /* border: #F06E22 solid 4px; */
-
-    /* background-color: var(--button-blue); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-
-    padding: 100px 24px;
-
-    text-align: center;
-}
-
-.contenedor-candidatos-titulares {
-    /* contiene los 2 grupos de concejales titulares y tribunal de cuenta */
-
-    /* background-color: black; */
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-}
-
-.flex-candidatos-top {
-    /* border: 4px solid yellow; */
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-}
-
-.candidatos h2 {
-    color: var(--black-jxc);
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.container-candidatos-on-top {
-    /* border: 4px blue solid; */
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 12px;
-}
-
-
-.foto-candidatos-on-top {
-    height: 120px;
-    width: 120px;
-    aspect-ratio: 1 / 1;
-}
-
-.description-candidatos-on-top h2 {
-    /* border: 4px solid red; */
-
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--black-jxc);
-}
-
-.description-candidatos-on-top h3 {
-    /* border: 4px solid red; */
-
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--black-jxc);
-}
-
-
-
-
-.flex-candidatos-bottom {
-    /* border: #EE1B2E solid 4px; */
-
-    /* contiene las tres cajitas de 7 candidatos a concejales, titulares y suplentes tambien */
-
-
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-
-.flex-candidatos-bottom-tribunal {
-    /* border: #EE1B2E solid 4px; */
-
-    /* contiene las tres cajitas de candidatos a TRIBUNAL, titulares y suplentes tambien */
-
-    margin-top: 80px;
-    margin-bottom: 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-
-
-.container-candidatos-bottom {
-    /* border: 4px blue solid; */
-
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    gap: 12px;
-
-    text-align: left;
-}
-
-.foto-candidatos-bottom {
-    height: 55px;
-    width: 55px;
-    aspect-ratio: 1 / 1;
-}
-
-
-.description-candidatos-bottom h2 {
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--black-jxc);
-}
-
-
-
-.description-candidatos-bottom h3 {
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--black-jxc);
-}
-
-
-
-
-
-@media (min-width:768px) {
-    .candidatos {
-        padding: 100px 100px;
-    }
-
-    /* .flex-candidatos-bottom{
         flex-direction: row;
-    } */
+        justify-content: space-between;
+        margin: 0px 24px;
+        /* gap: 6px; */
+
+    }
+
+    .barrita .color-barrita-1 {
+        background-color: #FED102;
+        width: 20%;
+    }
+
+    .barrita .color-barrita-2 {
+        background-color: #F8B80E;
+        width: 20%;
+    }
+
+    .barrita .color-barrita-3 {
+        background-color: #F06E22;
+        width: 20%;
+    }
+
+    .barrita .color-barrita-4 {
+        background-color: #EE1B2E;
+        width: 20%;
+    }
+
+    .barrita .color-barrita-5 {
+        background-color: #BC1A8D;
+        width: 20%;
+    }
+
+    .barrita .color-barrita-6 {
+        background-color: #9C2285;
+        width: 20%;
+    }
+
+    .barrita .color-barrita-7 {
+        background-color: #2D2A79;
+        width: 20%;
+    }
+
+    .barrita .color-barrita-8 {
+        background-color: #35BFE3;
+        width: 20%;
+    }
+
+
+
+    /* Section "Nosotros" */
+
+    .nosotros {
+
+        /* border: #F06E22 solid 4px; */
+
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 100px 24px;
+        text-align: center;
+    }
+
+    .nosotros h2 {
+        color: var(--black-jxc);
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .nosotros p {
+        color: var(--black-jxc);
+        font-weight: 500;
+        font-size: 16px;
+
+        line-height: 26px;
+    }
+
+    .nosotros a {
+        color: var(--white);
+        background-color: var(--button-blue);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 16px 20px;
+        min-width: 250px;
+    }
+
+    @media (min-width:768px) {
+        .nosotros {
+            padding: 100px 180px;
+        }
+    }
+
+    /* Section "Hay razones" */
+
+    .hay-razones {
+
+        /* border: #F06E22 solid 4px; */
+
+
+        background-image: url(../assets/img/hay-razones-background.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 100px 24px;
+        text-align: center;
+    }
+
+    .hay-razones h2 {
+        color: var(--white);
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .hay-razones p {
+        color: var(--white);
+        font-weight: 500;
+        font-size: 16px;
+
+        line-height: 26px;
+    }
+
+    @media (min-width:768px) {
+        .hay-razones {
+            padding: 100px 180px;
+        }
+    }
+
+    /* Section "Propuestas" */
+
+    .propuestas {
+
+        /* border: #F06E22 solid 4px; */
+
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 100px 24px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .propuestas h2 {
+        color: var(--black-jxc);
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .propuestas p {
+        color: var(--black-jxc);
+        font-weight: 500;
+        font-size: 16px;
+
+        line-height: 26px;
+    }
+
+    .propuestas a {
+        color: var(--white);
+        background-color: var(--button-blue);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 16px 20px;
+        min-width: 250px;
+    }
+
+    @media (min-width:768px) {
+        .propuestas {
+            padding: 100px 180px;
+        }
+    }
+
+
+    /* Desplegables de la seccion propuestas */
+
+    #accordion {
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    #accordion li {
+        width: 100%;
+        background-color: var(--white);
+
+        border: 2px solid var(--black-jxc);
+
+        border-radius: 4px;
+    }
+
+    #accordion li label {
+        padding: 24px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--black-jxc);
+
+        cursor: pointer;
+
+    }
+
+
+    .material-symbols-outlined {
+        scale: 120%;
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 700,
+            'GRAD' 0,
+            'opsz' 48
+    }
+
+    #accordion label+input[type="checkbox"] {
+        display: none;
+    }
+
+    #accordion .content {
+        padding: 0px 16px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+
+    }
+
+    #accordion label+input[type="checkbox"]:checked+.content {
+        max-height: 400px;
+    }
+
+    .content p {
+        margin-bottom: 24px;
+    }
+
+    #accordion label+input[type="checkbox"]:checked+.content {
+        max-height: 2200px;
+    }
+
+
+    /* span rotation */
+
+    .rotated {
+        transform: rotate(180deg);
+        transition: transform 0.3s;
+    }
+
+
+
+
+    /* Section "Nosotros" */
+
+    .candidatos {
+
+        /* border: #F06E22 solid 4px; */
+
+        /* background-color: var(--button-blue); */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        padding: 100px 24px;
+
+        text-align: center;
+    }
+
+    .contenedor-candidatos-titulares {
+        /* contiene los 2 grupos de concejales titulares y tribunal de cuenta */
+
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+    }
 
     .flex-candidatos-top {
+        /* border: 4px solid yellow; */
         display: flex;
+        flex-direction: column;
         gap: 40px;
-        width: 100%;
 
     }
 
-    .flex-candidatos-bottom-tribunal {
-        margin-top: 0px;
+    .candidatos h2 {
+        color: var(--black-jxc);
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .container-candidatos-on-top {
+        /* border: 4px blue solid; */
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 12px;
+    }
+
+
+    .foto-candidatos-on-top {
+        height: 120px;
+        width: 120px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .description-candidatos-on-top h2 {
+        /* border: 4px solid red; */
+
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--black-jxc);
+    }
+
+    .description-candidatos-on-top h3 {
+        /* border: 4px solid red; */
+
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--black-jxc);
+    }
+
+
+
+
+    .flex-candidatos-bottom {
+        /* border: #EE1B2E solid 4px; */
+
+        /* contiene las tres cajitas de 7 candidatos a concejales, titulares y suplentes tambien */
+
+
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
 
-    .contenedor-candidatos-titulares {
+
+    .flex-candidatos-bottom-tribunal {
+        /* border: #EE1B2E solid 4px; */
+
+        /* contiene las tres cajitas de candidatos a TRIBUNAL, titulares y suplentes tambien */
+
+        margin-top: 80px;
+        margin-bottom: 80px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
         gap: 40px;
     }
 
 
-}
+
+    .container-candidatos-bottom {
+        /* border: 4px blue solid; */
+
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        gap: 12px;
+
+        text-align: left;
+    }
+
+    .foto-candidatos-bottom {
+        height: 55px;
+        width: 55px;
+        aspect-ratio: 1 / 1;
+    }
+
+
+    .description-candidatos-bottom h2 {
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--black-jxc);
+    }
+
+
+
+    .description-candidatos-bottom h3 {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--black-jxc);
+    }
 
 
 
 
 
-.footer-flex-wrapper {
-    background-color: #252525;
-    /* border: #F06E22 solid 4px; */
+    @media (min-width:768px) {
+        .candidatos {
+            padding: 100px 100px;
+        }
 
-    width: 100%;
-    display: flex;
+        /* .flex-candidatos-bottom{
+        flex-direction: row;
+    } */
 
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 24px;
-    text-align: center;
-}
+        .flex-candidatos-top {
+            display: flex;
+            gap: 40px;
+            width: 100%;
 
-footer .footer-flex-wrapper .gabi-rampulla-intendente {
+        }
 
-    /* border: 4px solid yellow; */
-    /* width: 100%; */
+        .flex-candidatos-bottom-tribunal {
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
 
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
+        .contenedor-candidatos-titulares {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+        }
 
-footer .footer-flex-wrapper .gabi-rampulla-intendente .gabi {
-    /* border: 4px solid red; */
-    color: var(--white);
-    font-size: 42px;
-    font-weight: 900;
-}
 
-footer .footer-flex-wrapper .gabi-rampulla-intendente .rampulla {
-    /* border: 4px solid red; */
-    color: var(--white);
-    font-size: 42px;
-    font-weight: 800;
+    }
 
-    margin-bottom: 4px;
-}
 
-footer .footer-flex-wrapper .gabi-rampulla-intendente .intendente {
-    /* border: 4px solid red; */
-    color: var(--white);
-    font-size: 42px;
-    font-weight: 400;
 
-    margin-bottom: 8px;
-}
 
-footer .footer-flex-wrapper .barrita-container {
-    /* border: 4px solid white; */
-    margin-bottom: 0;
-    width: 100%;
-}
 
-.barrita {
+    .footer-flex-wrapper {
+        background-color: #252525;
+        /* border: #F06E22 solid 4px; */
 
-    /* border: solid 4px pink; */
+        width: 100%;
+        display: flex;
 
-    overflow: hidden;
-    border-radius: 25px;
-    height: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 60px 24px;
+        text-align: center;
+    }
 
-}
+    footer .footer-flex-wrapper .gabi-rampulla-intendente {
 
-.alianza-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 24px;
-    gap: 32px;
-    width: 100%;
-    background-color: #fafafa;
-}
+        /* border: 4px solid yellow; */
+        /* width: 100%; */
 
-.separador-iconos-partidos{
-    display: flex;
-    gap: 12px;
-}
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    footer .footer-flex-wrapper .gabi-rampulla-intendente .gabi {
+        /* border: 4px solid red; */
+        color: var(--white);
+        font-size: 42px;
+        font-weight: 900;
+    }
+
+    footer .footer-flex-wrapper .gabi-rampulla-intendente .rampulla {
+        /* border: 4px solid red; */
+        color: var(--white);
+        font-size: 42px;
+        font-weight: 800;
+
+        margin-bottom: 4px;
+    }
+
+    footer .footer-flex-wrapper .gabi-rampulla-intendente .intendente {
+        /* border: 4px solid red; */
+        color: var(--white);
+        font-size: 42px;
+        font-weight: 400;
+
+        margin-bottom: 8px;
+    }
+
+    footer .footer-flex-wrapper .barrita-container {
+        /* border: 4px solid white; */
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .barrita {
+
+        /* border: solid 4px pink; */
+
+        overflow: hidden;
+        border-radius: 25px;
+        height: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 0px;
+
+    }
+
+    .alianza-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 24px;
+        gap: 32px;
+        width: 100%;
+        background-color: #fafafa;
+    }
+
+    .separador-iconos-partidos {
+        display: flex;
+        gap: 12px;
+    }
