@@ -318,7 +318,7 @@ video {
 .nosotros h2 {
     color: var(--black-jxc);
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .nosotros p {
@@ -334,7 +334,7 @@ video {
     background-color: var(--button-blue);
     border-radius: 4px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     padding: 16px 20px;
 }
 
@@ -365,7 +365,7 @@ video {
 .hay-razones h2 {
     color: var(--white);
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .hay-razones p {
@@ -401,7 +401,7 @@ video {
 .propuestas h2 {
     color: var(--black-jxc);
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .propuestas p {
@@ -417,7 +417,7 @@ video {
     background-color: var(--button-blue);
     border-radius: 4px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     padding: 16px 20px;
 }
 
@@ -548,7 +548,7 @@ video {
 .candidatos h2 {
     color: var(--black-jxc);
     font-weight: 700;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .container-candidatos-on-top {
