@@ -36,34 +36,6 @@ hamburger.addEventListener('click', () => {
 
 
 
-const shareBtn = document.getElementById('shareBtn');
-
-shareBtn.addEventListener('click', () => {
-  if (navigator.share) {
-    navigator.share({
-      title: 'Título de tu página',
-      text: 'Conocé las propuestas del equipo de Gabi en',
-      url: 'https://www.laspeñascambia2023.com',
-      icon: 'https://www.dropbox.com/s/sz9clycv8rcga0v/icon-share.jpg?dl=0'
-    })
-      .then(() => console.log('Compartido con éxito'))
-      .catch(error => console.error('Error al compartir:', error));
-  } else {
-    console.log('API de compartir no disponible en este navegador');
-  }
-});
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
