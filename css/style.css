@@ -3,7 +3,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* display: none; */
     }
 
     html {
@@ -109,16 +108,12 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            /* mod para que ocupe toda la pantalla, era padding 0 antes */
-            /* padding-bottom: 520px; */
         }
 
 
 
         .menu {
             display: none;
-
-
             transition: transform 0.3s ease-in-out;
         }
 
@@ -215,8 +210,6 @@
     }
 
     .main-section {
-        /* border: solid 4px red; */
-
         background-image: url(../assets/img/hero-background-edit.jpg);
         height: 100vh;
         background-position: center;
@@ -246,8 +239,6 @@
 
 
     .barrita {
-
-        /* border: solid 4px pink; */
         overflow: hidden;
         border-radius: 25px;
         height: 16px;
@@ -255,8 +246,6 @@
         flex-direction: row;
         justify-content: space-between;
         margin: 0px 24px;
-        /* gap: 6px; */
-
     }
 
     .barrita .color-barrita-1 {
@@ -304,9 +293,6 @@
     /* Section "Nosotros" */
 
     .nosotros {
-
-        /* border: #F06E22 solid 4px; */
-
         background-color: var(--white);
         display: flex;
         flex-direction: column;
@@ -349,10 +335,6 @@
     /* Section "Hay razones" */
 
     .hay-razones {
-
-        /* border: #F06E22 solid 4px; */
-
-
         background-image: url(../assets/img/hay-razones-background.png);
         background-size: cover;
         background-position: center;
@@ -387,9 +369,6 @@
     /* Section "Propuestas" */
 
     .propuestas {
-
-        /* border: #F06E22 solid 4px; */
-
         background-color: var(--white);
         display: flex;
         flex-direction: column;
@@ -516,10 +495,6 @@
     /* Section "Nosotros" */
 
     .candidatos {
-
-        /* border: #F06E22 solid 4px; */
-
-        /* background-color: var(--button-blue); */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -533,15 +508,11 @@
     .contenedor-candidatos-titulares {
         /* contiene los 2 grupos de concejales titulares y tribunal de cuenta */
 
-        /* background-color: black; */
         display: flex;
         flex-direction: column;
-
-        /* width: 100%; */
     }
 
     .flex-candidatos-top {
-        /* border: 4px solid yellow; */
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -555,8 +526,6 @@
     }
 
     .container-candidatos-on-top {
-        /* border: 4px blue solid; */
-
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -573,8 +542,6 @@
     }
 
     .description-candidatos-on-top h2 {
-        /* border: 4px solid red; */
-
         font-weight: 700;
         font-size: 20px;
         color: var(--black-jxc);
@@ -582,8 +549,6 @@
     }
 
     .description-candidatos-on-top h3 {
-        /* border: 4px solid red; */
-
         font-weight: 500;
         font-size: 16px;
         color: var(--black-jxc);
@@ -593,11 +558,7 @@
 
 
     .flex-candidatos-bottom {
-        /* border: #EE1B2E solid 4px; */
-
         /* contiene las tres cajitas de 7 candidatos a concejales, titulares y suplentes tambien */
-
-
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -605,10 +566,6 @@
 
 
     .flex-candidatos-bottom-tribunal {
-        /* border: purple solid 4px; */
-
-        /* contiene las tres cajitas de candidatos a TRIBUNAL, titulares y suplentes tambien */
-
         margin-top: 80px;
         margin-bottom: 80px;
         display: flex;
@@ -619,8 +576,6 @@
 
 
     .container-candidatos-bottom {
-        /* border: 4px blue solid; */
-
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -642,8 +597,6 @@
         font-weight: 700;
         font-size: 20px;
         color: var(--black-jxc);
-
-        /* border: 4px solid yellow; */
         margin-bottom: 4px;
     }
 
@@ -663,10 +616,6 @@
         .candidatos {
             padding: 100px 100px;
         }
-
-        /* .flex-candidatos-bottom{
-        flex-direction: row;
-    } */
 
         .flex-candidatos-top {
             display: flex;
@@ -700,21 +649,91 @@
 
 
 
-    .footer-flex-wrapper {
-        background-color: #252525;
-        /* border: #F06E22 solid 4px; */
 
-        width: 100%;
+
+
+
+    .sumate {
+        background-color: var(--white);
         display: flex;
-
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 40px;
-        padding: 42px 24px;
+        padding: 100px 24px;
         text-align: center;
+        /* height: 100vh;
+        width: 100vw; */
+
+        margin-top: 64px;
     }
 
-    
+    .sumate h2 {
+        color: var(--black-jxc);
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .sumate p {
+        color: var(--black-jxc);
+        font-weight: 500;
+        font-size: 18px;
+
+        line-height: 26px;
+    }
+
+    .sumate a {
+        color: var(--white);
+        background-color: var(--button-blue);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 16px 20px;
+        min-width: 300px;
+    }
+
+    @media (min-width:900px) {
+        .sumate {
+            padding: 100px 250px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* ------------------------ */
 
@@ -802,7 +821,7 @@
             justify-content: space-between;
             margin: 0px 180px;
             /* gap: 6px; */
-    
+
         }
     }
 
