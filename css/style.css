@@ -1,22 +1,13 @@
-.btn-test {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    border: 4px solid red;
-
-    align-items: center;
-    justify-content: center;
-}
-
 #btn-share {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    background-color: var(--button-blue);
     border: none;
-    border-radius: 5px;
+    color: var(--white);
     cursor: pointer;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 16px 20px;
+    min-width: 250px;
 }
 
 .alert {
@@ -391,6 +382,7 @@ video {
     font-weight: 700;
     font-size: 18px;
     padding: 16px 20px;
+    min-width: 250px;
 }
 
 @media (min-width:768px) {
@@ -474,6 +466,7 @@ video {
     font-weight: 700;
     font-size: 18px;
     padding: 16px 20px;
+    min-width: 250px;
 }
 
 @media (min-width:768px) {
@@ -744,7 +737,7 @@ video {
 
 
 
-footer {
+.footer-flex-wrapper {
     background-color: #252525;
     /* border: #F06E22 solid 4px; */
 
@@ -754,44 +747,49 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 100px 24px;
+    padding: 60px 24px;
     text-align: center;
 }
 
-footer .gabi-rampulla-intendente {
+footer .footer-flex-wrapper .gabi-rampulla-intendente {
 
     /* border: 4px solid yellow; */
-    width: 100%;
+    /* width: 100%; */
 
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
-footer .gabi-rampulla-intendente .gabi {
+footer .footer-flex-wrapper .gabi-rampulla-intendente .gabi {
     /* border: 4px solid red; */
     color: var(--white);
     font-size: 42px;
     font-weight: 900;
 }
 
-footer .gabi-rampulla-intendente .rampulla {
+footer .footer-flex-wrapper .gabi-rampulla-intendente .rampulla {
     /* border: 4px solid red; */
     color: var(--white);
     font-size: 42px;
-    font-weight: 900;
+    font-weight: 800;
+
+    margin-bottom: 4px;
 }
 
-footer .gabi-rampulla-intendente .intendente {
+footer .footer-flex-wrapper .gabi-rampulla-intendente .intendente {
     /* border: 4px solid red; */
     color: var(--white);
     font-size: 42px;
     font-weight: 400;
+
+    margin-bottom: 8px;
 }
 
-footer .barrita-container {
+footer .footer-flex-wrapper .barrita-container {
     /* border: 4px solid white; */
     margin-bottom: 0;
+    width: 100%;
 }
 
 .barrita {
@@ -808,7 +806,18 @@ footer .barrita-container {
 
 }
 
+.alianza-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 24px;
+    gap: 32px;
+    width: 100%;
+    background-color: #fafafa;
+}
 
-
-
-/* loader */
+.separador-iconos-partidos{
+    display: flex;
+    gap: 12px;
+}
