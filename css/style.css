@@ -536,8 +536,6 @@
         /* background-color: black; */
         display: flex;
         flex-direction: column;
-
-        width: 100%;
     }
 
     .flex-candidatos-top {
