@@ -10,7 +10,7 @@
     justify-content: center;
 }
 
-#btn-share {
+#shareBtn {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -19,26 +19,6 @@
     cursor: pointer;
 }
 
-.alert {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 15px;
-    background-color: #f44336;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    z-index: 9999;
-    /* asegura que la alerta esté en la capa superior */
-    width: 100%;
-    /* ancho completo */
-    box-sizing: border-box;
-    /* incluye el relleno y el borde en el ancho total */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    /* sombra para separar de la página */
-}
 
 
 
