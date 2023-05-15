@@ -324,7 +324,7 @@ video {
 .nosotros p {
     color: var(--black-jxc);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 
     line-height: 26px;
 }
@@ -370,8 +370,8 @@ video {
 
 .hay-razones p {
     color: var(--white);
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
 
     line-height: 26px;
 }
@@ -407,7 +407,7 @@ video {
 .propuestas p {
     color: var(--black-jxc);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 
     line-height: 26px;
 }
@@ -457,7 +457,7 @@ video {
     gap: 4px;
 
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--black-jxc);
 
     cursor: pointer;
