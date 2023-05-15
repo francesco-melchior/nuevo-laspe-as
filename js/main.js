@@ -13,17 +13,17 @@ hamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
 
-const links = document.querySelectorAll('.menu a');
+// const links = document.querySelectorAll('.menu a');
 
-for (const link of links) {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const targetId = link.getAttribute('href');
-    document.querySelector(targetId).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-}
+// for (const link of links) {
+//   link.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const targetId = link.getAttribute('href');
+//     document.querySelector(targetId).scrollIntoView({
+//       behavior: 'smooth'
+//     });
+//   });
+// }
 
 
 
