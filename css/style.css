@@ -857,7 +857,6 @@ gap: 12px;
 /* ------------------------ */
 
 .animate__animated.animate__fadeIn {
-    --animate-duration: 4s;
+    --animate-duration: 1.5s;
   }
-  
   
