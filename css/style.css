@@ -1,5 +1,24 @@
+<<<<<<< HEAD
 #btn-share {
     background-color: var(--button-blue);
+=======
+.btn-test {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    border: 4px solid red;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#shareBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+>>>>>>> b57a4a0dba3c57483be77911f04afa07aacd7bcc
     border: none;
     color: var(--white);
     cursor: pointer;
@@ -10,26 +29,6 @@
     min-width: 250px;
 }
 
-.alert {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 15px;
-    background-color: #f44336;
-    color: white;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    z-index: 9999;
-    /* asegura que la alerta esté en la capa superior */
-    width: 100%;
-    /* ancho completo */
-    box-sizing: border-box;
-    /* incluye el relleno y el borde en el ancho total */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    /* sombra para separar de la página */
-}
 
 
 
