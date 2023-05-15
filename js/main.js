@@ -42,9 +42,9 @@ shareBtn.addEventListener('click', () => {
   if (navigator.share) {
     navigator.share({
       title: 'Título de tu página',
-      text: 'Texto que se compartirá junto al enlace',
-      url: 'https://www.tupagina.com',
-      icon: 'https://www.dropbox.com/s/q9vyac0ut9qo911/icon-share.png?dl=0'
+      text: 'Conocé las propuestas del equipo de Gabi en',
+      url: 'https://www.laspeñascambia2023.com',
+      icon: 'https://www.dropbox.com/s/sz9clycv8rcga0v/icon-share.jpg?dl=0'
     })
       .then(() => console.log('Compartido con éxito'))
       .catch(error => console.error('Error al compartir:', error));
