@@ -696,6 +696,10 @@
 
 
 
+
+
+
+
     .footer-flex-wrapper {
         background-color: #252525;
         /* border: #F06E22 solid 4px; */
@@ -787,12 +791,13 @@
 
 
     .logo-jxc {
-        width: 250px;
+        width: 240px;
         height: 100%;
     }
 
 
     .contact {
+        display: none;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -802,7 +807,7 @@
 
         gap: 24px;
 
-        margin-top: 100px;
+        margin-top: 24px;
     }
 
     .div-correo {
@@ -814,7 +819,7 @@
     }
 
     .div-correo p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: var(--black-jxc);
         text-decoration: none;
@@ -843,7 +848,7 @@
     }
 
     .div-facebook p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         color: var(--black-jxc);
         text-decoration: none;
@@ -863,7 +868,6 @@
     .div-facebook a:hover {
         color: var(--black-jxc);
     }
-
 
 
     /* ------------------------ */
